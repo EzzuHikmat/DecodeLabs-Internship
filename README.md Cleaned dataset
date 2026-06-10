@@ -1,0 +1,81 @@
+# 🧹 Cleaned E-Commerce Dataset — De-Code Labs
+
+A cleaned and analysis-ready e-commerce orders dataset containing **1,200 transactions** spanning **January 2023 to June 2025**, prepared as part of the De-Code Labs Data Analytics project.
+
+## 📄 File
+
+`Cleaned_Dataset_DeCodeLabs.xlsx`
+
+---
+
+## ✅ Cleaning Summary
+
+- **Zero null values** across all 14 columns (missing `CouponCode` values from the raw dataset have been filled)
+- Consistent formatting applied to all categorical fields
+- Date column standardized to datetime format
+- Ready for EDA, visualization, or machine learning pipelines
+
+---
+
+## 📐 Dataset Overview
+
+| Property | Details |
+|----------|---------|
+| **Rows** | 1,200 orders |
+| **Columns** | 14 |
+| **Date Range** | Jan 1, 2023 – Jun 30, 2025 |
+| **Null Values** | None |
+
+---
+
+## 🗂️ Column Reference
+
+| Column | Type | Description |
+|--------|------|-------------|
+| `OrderID` | String | Unique order identifier (e.g. `ORD200000`) |
+| `Date` | Date | Date the order was placed |
+| `CustomerID` | String | Unique customer identifier (e.g. `C72649`) |
+| `Product` | Categorical | Product category ordered |
+| `Quantity` | Integer | Number of units ordered (1–5) |
+| `UnitPrice` | Float | Price per unit in USD |
+| `ShippingAddress` | String | Delivery address |
+| `PaymentMethod` | Categorical | Method used to pay |
+| `OrderStatus` | Categorical | Current status of the order |
+| `TrackingNumber` | String | Shipment tracking reference |
+| `ItemsInCart` | Integer | Total items in cart at checkout (1–10) |
+| `CouponCode` | Categorical | Discount code applied at checkout |
+| `ReferralSource` | Categorical | Channel that referred the customer |
+| `TotalPrice` | Float | Final order value in USD (`Quantity × UnitPrice`) |
+
+---
+
+## 📊 Categorical Values
+
+| Column | Values |
+|--------|--------|
+| **Product** | Chair, Desk, Laptop, Monitor, Phone, Printer, Tablet |
+| **OrderStatus** | Cancelled, Delivered, Pending, Returned, Shipped |
+| **PaymentMethod** | Cash, Credit Card, Debit Card, Gift Card, Online |
+| **ReferralSource** | Email, Facebook, Google, Instagram, Referral |
+| **CouponCode** | FREESHIP, SAVE10, WINTER15 |
+
+---
+
+## 🔗 Related Files
+
+| File | Description |
+|------|-------------|
+| `Dataset_for_Data_Analytics_De-code_labs.xlsx` | Original raw dataset (contains nulls in `CouponCode`) |
+| `EDA_Report.xlsx` | Full exploratory data analysis report generated from this dataset |
+
+---
+
+## 🛠️ Suggested Uses
+
+- Exploratory Data Analysis (EDA)
+- Sales trend and revenue analysis
+- Customer segmentation
+- Marketing channel performance evaluation
+- Order fulfillment and return rate analysis
+- Practice dataset for data analytics portfolios
+
